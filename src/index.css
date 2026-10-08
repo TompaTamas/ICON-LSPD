@@ -1,0 +1,200 @@
+@import 'tailwindcss';
+
+/* ICON LSPD – design tokenek. Hivatalos, egyenruha-kék alap; a piros/kék csak élő állapotot jelez. */
+@theme {
+  --color-ink: #10213f;
+  --color-uniform: #1f3b73;
+  --color-uniform-600: #2a4b8d;
+  --color-data: #2f5597;
+  --color-gold: #c8a13a;
+  --color-gold-soft: #f3ead2;
+  --color-paper: #f6f7f9;
+  --color-sheet: #ffffff;
+  --color-line: #dde2ea;
+  --color-steel: #5b6b82;
+  --color-mute: #8a97a8;
+  --color-siren-red: #d2343a;
+  --color-siren-blue: #2f6bdb;
+  --color-ok: #1f8a4c;
+  --color-warn: #b7791f;
+
+  --font-display: 'Big Shoulders Display', 'Arial Narrow', sans-serif;
+  --font-sans: 'Public Sans', system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    min-height: 100vh;
+    background: var(--color-paper);
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-gold);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  ::selection {
+    background: var(--color-gold-soft);
+  }
+}
+
+@layer components {
+  .display {
+    font-family: var(--font-display);
+    letter-spacing: 0.01em;
+    line-height: 0.95;
+  }
+  .num {
+    font-variant-numeric: tabular-nums;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 6px;
+    padding: 0.55rem 1rem;
+    font-weight: 600;
+    font-size: 0.925rem;
+    transition: background-color 0.15s, color 0.15s, border-color 0.15s;
+    cursor: pointer;
+  }
+  .btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  .btn-primary {
+    background: var(--color-uniform);
+    color: white;
+  }
+  .btn-primary:hover:not(:disabled) {
+    background: var(--color-ink);
+  }
+  .btn-gold {
+    background: var(--color-gold);
+    color: var(--color-ink);
+  }
+  .btn-gold:hover:not(:disabled) {
+    background: #b38d2b;
+  }
+  .btn-ghost {
+    border: 1px solid var(--color-line);
+    background: var(--color-sheet);
+    color: var(--color-ink);
+  }
+  .btn-ghost:hover:not(:disabled) {
+    border-color: var(--color-steel);
+  }
+  .btn-danger {
+    background: var(--color-siren-red);
+    color: white;
+  }
+  .btn-sm {
+    padding: 0.3rem 0.65rem;
+    font-size: 0.825rem;
+  }
+  .input {
+    width: 100%;
+    border: 1px solid var(--color-line);
+    background: var(--color-sheet);
+    border-radius: 6px;
+    padding: 0.55rem 0.75rem;
+    font-size: 0.95rem;
+    color: var(--color-ink);
+  }
+  .input:focus {
+    outline: none;
+    border-color: var(--color-uniform);
+    box-shadow: 0 0 0 3px rgb(31 59 115 / 0.15);
+  }
+  .label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-steel);
+    margin-bottom: 0.3rem;
+  }
+  .sheet {
+    background: var(--color-sheet);
+    border: 1px solid var(--color-line);
+    border-radius: 10px;
+  }
+  .prose-lspd {
+    line-height: 1.7;
+    max-width: 72ch;
+  }
+  .prose-lspd h1,
+  .prose-lspd h2,
+  .prose-lspd h3 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    line-height: 1.05;
+    margin: 1.4em 0 0.5em;
+  }
+  .prose-lspd h1 { font-size: 2rem; }
+  .prose-lspd h2 { font-size: 1.6rem; }
+  .prose-lspd h3 { font-size: 1.3rem; }
+  .prose-lspd p,
+  .prose-lspd ul,
+  .prose-lspd ol,
+  .prose-lspd blockquote { margin: 0.7em 0; }
+  .prose-lspd ul { list-style: disc; padding-left: 1.4em; }
+  .prose-lspd ol { list-style: decimal; padding-left: 1.4em; }
+  .prose-lspd a { color: var(--color-uniform); text-decoration: underline; }
+  .prose-lspd strong { font-weight: 700; }
+  .prose-lspd blockquote {
+    border-left: 3px solid var(--color-gold);
+    padding: 0.3em 0 0.3em 1em;
+    color: var(--color-steel);
+  }
+  .prose-lspd code {
+    background: var(--color-paper);
+    padding: 0.1em 0.35em;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  .prose-lspd table { border-collapse: collapse; margin: 1em 0; }
+  .prose-lspd th,
+  .prose-lspd td { border: 1px solid var(--color-line); padding: 0.4em 0.7em; text-align: left; }
+}
+
+/* A diszpécser-tábla felett futó fénycsík – az oldal egyetlen „élő” animációja. */
+@keyframes lightbar {
+  0%, 45% { background-position: 0 0; }
+  50%, 95% { background-position: 100% 0; }
+  100% { background-position: 0 0; }
+}
+.lightbar {
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-siren-red) 0 50%, var(--color-siren-blue) 50% 100%);
+  background-size: 200% 100%;
+  animation: lightbar 1.6s steps(1) infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+.live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--color-siren-red);
+  animation: pulse-dot 1.6s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .lightbar,
+  .live-dot { animation: none; }
+}
+
+@media print {
+  header,
+  footer,
+  .no-print { display: none !important; }
+  main { padding: 0 !important; max-width: none !important; }
+  body, html { background: white; }
+}
