@@ -1755,6 +1755,859 @@
      "sort": 6
     }
    ]
+  },
+  {
+   "id": 11,
+   "number": "XI.",
+   "title": "Korrupció és hivatali bűncselekmények",
+   "description": "A hivatalos személyek (rendőrök, bírók, önkormányzati és állami dolgozók) által, illetve velük szemben elkövetett korrupciós és hivatali bűncselekmények. Hivatalos személy elkövetése esetén a büntetés a tartomány felső fele, és **fegyelmi eljárást** (IA) is von maga után.",
+   "sort": 10,
+   "items": [
+    {
+     "id": 110,
+     "chapter_id": 11,
+     "paragraph": "110. §",
+     "title": "Hivatali visszaélés",
+     "description": "Hivatalos személy, aki jogtalan előny szerzése vagy hátrány okozása céljából megszegi a hivatali kötelességét vagy túllépi a hatáskörét.",
+     "category": "buntett",
+     "fine_min": 5000,
+     "fine_max": 12000,
+     "jail_min": 15,
+     "jail_max": 30,
+     "flags": [],
+     "sort": 0
+    },
+    {
+     "id": 111,
+     "chapter_id": 11,
+     "paragraph": "111. §",
+     "title": "Vesztegetés elfogadása",
+     "description": "Hivatalos személy, aki a működésével kapcsolatban jogtalan előnyt kér, elfogad, vagy annak ígéretét elfogadja.",
+     "category": "buntett",
+     "fine_min": 8000,
+     "fine_max": 20000,
+     "jail_min": 20,
+     "jail_max": 40,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 1
+    },
+    {
+     "id": 112,
+     "chapter_id": 11,
+     "paragraph": "112. §",
+     "title": "Befolyással üzérkedés",
+     "description": "Aki arra hivatkozva kér vagy fogad el előnyt, hogy egy hivatalos személyt befolyásolni tud.",
+     "category": "buntett",
+     "fine_min": 5000,
+     "fine_max": 12000,
+     "jail_min": 15,
+     "jail_max": 30,
+     "flags": [],
+     "sort": 2
+    },
+    {
+     "id": 113,
+     "chapter_id": 11,
+     "paragraph": "113. §",
+     "title": "Hűtlen kezelés (közvagyon)",
+     "description": "A kezelésére bízott közpénz vagy közvagyon szándékos megkárosítása, jogtalan felhasználása.",
+     "category": "buntett",
+     "fine_min": 8000,
+     "fine_max": 20000,
+     "jail_min": 20,
+     "jail_max": 40,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 3
+    },
+    {
+     "id": 114,
+     "chapter_id": 11,
+     "paragraph": "114. §",
+     "title": "Közokirat-hamisítás hivatalos személy által",
+     "description": "Valótlan tartalmú közokirat kiállítása vagy hamis adat rögzítése (pl. jelentés, MDT-bejegyzés, engedély).",
+     "category": "buntett",
+     "fine_min": 6000,
+     "fine_max": 14000,
+     "jail_min": 15,
+     "jail_max": 35,
+     "flags": [],
+     "sort": 4
+    },
+    {
+     "id": 115,
+     "chapter_id": 11,
+     "paragraph": "115. §",
+     "title": "Bizonyíték elsikkasztása vagy meghamisítása hivatalos személy által",
+     "description": "Lefoglalt bizonyíték, pénz, kábítószer vagy fegyver eltulajdonítása, meghamisítása vagy eltüntetése.",
+     "category": "buntett",
+     "fine_min": 8000,
+     "fine_max": 18000,
+     "jail_min": 20,
+     "jail_max": 45,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 5
+    },
+    {
+     "id": 116,
+     "chapter_id": 11,
+     "paragraph": "116. §",
+     "title": "Hivatali titoksértés",
+     "description": "Szolgálati vagy hivatali titok jogosulatlan közlése, felhasználása (pl. körözési vagy nyomozati adatok kiadása).",
+     "category": "vetseg",
+     "fine_min": 3000,
+     "fine_max": 8000,
+     "jail_min": 5,
+     "jail_max": 20,
+     "flags": [],
+     "sort": 6
+    },
+    {
+     "id": 117,
+     "chapter_id": 11,
+     "paragraph": "117. §",
+     "title": "Bűnszervezet támogatása hivatalos személyként",
+     "description": "Hivatalos személy, aki bűnszervezetet információval, védelemmel vagy intézkedés szándékos elmulasztásával segít.",
+     "category": "buntett",
+     "fine_min": 15000,
+     "fine_max": 30000,
+     "jail_min": 40,
+     "jail_max": 80,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 7
+    },
+    {
+     "id": 118,
+     "chapter_id": 11,
+     "paragraph": "118. §",
+     "title": "Bántalmazás hivatalos eljárásban",
+     "description": "Hivatalos személy, aki eljárása során mást bántalmaz, vagy indokolatlanul túlzott erőt alkalmaz.",
+     "category": "buntett",
+     "fine_min": 5000,
+     "fine_max": 12000,
+     "jail_min": 15,
+     "jail_max": 30,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 8
+    },
+    {
+     "id": 119,
+     "chapter_id": 11,
+     "paragraph": "119. §",
+     "title": "Kényszervallatás",
+     "description": "Vallomás vagy nyilatkozat kicsikarása erőszakkal, fenyegetéssel vagy hasonló módon.",
+     "category": "buntett",
+     "fine_min": 8000,
+     "fine_max": 15000,
+     "jail_min": 20,
+     "jail_max": 40,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 9
+    },
+    {
+     "id": 120,
+     "chapter_id": 11,
+     "paragraph": "120. §",
+     "title": "Jogellenes fogva tartás hivatalos személy által",
+     "description": "Más személyes szabadságának jogellenes elvonása hivatali hatáskörrel visszaélve.",
+     "category": "buntett",
+     "fine_min": 6000,
+     "fine_max": 14000,
+     "jail_min": 15,
+     "jail_max": 35,
+     "flags": [],
+     "sort": 10
+    },
+    {
+     "id": 121,
+     "chapter_id": 11,
+     "paragraph": "121. §",
+     "title": "Bűncselekmény eltitkolása hivatalos személyként",
+     "description": "Hivatalos személy, aki a tudomására jutott bűncselekményt nem jelenti, vagy annak eltitkolásában segít.",
+     "category": "vetseg",
+     "fine_min": 2000,
+     "fine_max": 6000,
+     "jail_min": 5,
+     "jail_max": 15,
+     "flags": [],
+     "sort": 11
+    },
+    {
+     "id": 122,
+     "chapter_id": 11,
+     "paragraph": "122. §",
+     "title": "Hamis vád",
+     "description": "Más személy hatóság előtti hamis megvádolása bűncselekmény elkövetésével, vagy ellene hamis bizonyíték gyártása.",
+     "category": "buntett",
+     "fine_min": 4000,
+     "fine_max": 10000,
+     "jail_min": 10,
+     "jail_max": 25,
+     "flags": [],
+     "sort": 12
+    },
+    {
+     "id": 123,
+     "chapter_id": 11,
+     "paragraph": "123. §",
+     "title": "Adócsalás",
+     "description": "Adó vagy közteher jelentős összegű eltitkolása, a bevétel elhallgatása, fiktív számlák használata.",
+     "category": "buntett",
+     "fine_min": 5000,
+     "fine_max": 15000,
+     "jail_min": 10,
+     "jail_max": 30,
+     "flags": [],
+     "sort": 13
+    },
+    {
+     "id": 124,
+     "chapter_id": 11,
+     "paragraph": "124. §",
+     "title": "Csempészet",
+     "description": "Áru, jármű vagy tiltott termék behozatala, kivitele a hatósági ellenőrzés kijátszásával.",
+     "category": "buntett",
+     "fine_min": 8000,
+     "fine_max": 20000,
+     "jail_min": 20,
+     "jail_max": 40,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 14
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "number": "XII.",
+   "title": "EMS-sel kapcsolatos bűncselekmények",
+   "description": "A mentőszolgálat (EMS), az egészségügyi dolgozók, járműveik, felszereléseik és a betegellátás elleni cselekmények, valamint az egészségügyi dolgozók által elkövetett jogsértések. Az EMS-dolgozók munkavégzés közben **hivatalos személynek** minősülnek.",
+   "sort": 11,
+   "items": [
+    {
+     "id": 125,
+     "chapter_id": 12,
+     "paragraph": "125. §",
+     "title": "Egészségügyi dolgozó elleni erőszak",
+     "description": "Mentős, orvos vagy ápoló bántalmazása, illetve erőszakkal fenyegetése munkavégzése közben.",
+     "category": "buntett",
+     "fine_min": 5000,
+     "fine_max": 12000,
+     "jail_min": 20,
+     "jail_max": 40,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 0
+    },
+    {
+     "id": 126,
+     "chapter_id": 12,
+     "paragraph": "126. §",
+     "title": "Mentés akadályozása",
+     "description": "A sérült ellátásának vagy elszállításának szándékos akadályozása, a mentők munkájának megzavarása.",
+     "category": "vetseg",
+     "fine_min": 2000,
+     "fine_max": 5000,
+     "jail_min": 5,
+     "jail_max": 15,
+     "flags": [],
+     "sort": 1
+    },
+    {
+     "id": 127,
+     "chapter_id": 12,
+     "paragraph": "127. §",
+     "title": "Megkülönböztető jelzést használó mentőjármű akadályozása",
+     "description": "Szirénázó mentőjármű útjának elzárása, elsőbbségének meg nem adása.",
+     "category": "szabalysertes",
+     "fine_min": 1000,
+     "fine_max": 2500,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [
+      "jogositvany"
+     ],
+     "sort": 2
+    },
+    {
+     "id": 128,
+     "chapter_id": 12,
+     "paragraph": "128. §",
+     "title": "Mentőjármű vagy egészségügyi felszerelés ellopása",
+     "description": "Mentőautó, mentőhelikopter, defibrillátor vagy más orvosi felszerelés jogtalan elvétele.",
+     "category": "buntett",
+     "fine_min": 5000,
+     "fine_max": 12000,
+     "jail_min": 15,
+     "jail_max": 30,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 3
+    },
+    {
+     "id": 129,
+     "chapter_id": 12,
+     "paragraph": "129. §",
+     "title": "Egészségügyi dolgozó megszemélyesítése",
+     "description": "Mentősnek, orvosnak kiadás (egyenruha, jelvény, jármű), vagy egészségügyi ellátás színlelése.",
+     "category": "buntett",
+     "fine_min": 4000,
+     "fine_max": 9000,
+     "jail_min": 10,
+     "jail_max": 25,
+     "flags": [],
+     "sort": 4
+    },
+    {
+     "id": 130,
+     "chapter_id": 12,
+     "paragraph": "130. §",
+     "title": "Kuruzslás",
+     "description": "Gyógyítás, műtét vagy orvosi kezelés végzése megfelelő képesítés és engedély nélkül.",
+     "category": "vetseg",
+     "fine_min": 3000,
+     "fine_max": 8000,
+     "jail_min": 10,
+     "jail_max": 20,
+     "flags": [],
+     "sort": 5
+    },
+    {
+     "id": 131,
+     "chapter_id": 12,
+     "paragraph": "131. §",
+     "title": "Gyógyszer vagy orvosi eszköz lopása",
+     "description": "Gyógyszer, kötszer vagy orvosi eszköz eltulajdonítása kórházból, mentőjárműből vagy gyógyszertárból.",
+     "category": "vetseg",
+     "fine_min": 2000,
+     "fine_max": 6000,
+     "jail_min": 5,
+     "jail_max": 15,
+     "flags": [],
+     "sort": 6
+    },
+    {
+     "id": 132,
+     "chapter_id": 12,
+     "paragraph": "132. §",
+     "title": "Vényköteles gyógyszer illegális forgalmazása",
+     "description": "Vényköteles vagy kábító hatású gyógyszer engedély nélküli árusítása, átadása.",
+     "category": "buntett",
+     "fine_min": 5000,
+     "fine_max": 12000,
+     "jail_min": 15,
+     "jail_max": 30,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 7
+    },
+    {
+     "id": 133,
+     "chapter_id": 12,
+     "paragraph": "133. §",
+     "title": "Hamis orvosi igazolás",
+     "description": "Valótlan tartalmú orvosi igazolás, lelet, látlelet vagy halotti bizonyítvány kiállítása vagy felhasználása.",
+     "category": "vetseg",
+     "fine_min": 2000,
+     "fine_max": 5000,
+     "jail_min": 5,
+     "jail_max": 15,
+     "flags": [],
+     "sort": 8
+    },
+    {
+     "id": 134,
+     "chapter_id": 12,
+     "paragraph": "134. §",
+     "title": "Sürgősségi ellátás megtagadása",
+     "description": "Egészségügyi dolgozó, aki a szükséges sürgősségi ellátást indokolatlanul megtagadja vagy elmulasztja.",
+     "category": "vetseg",
+     "fine_min": 2000,
+     "fine_max": 6000,
+     "jail_min": 5,
+     "jail_max": 15,
+     "flags": [],
+     "sort": 9
+    },
+    {
+     "id": 135,
+     "chapter_id": 12,
+     "paragraph": "135. §",
+     "title": "Orvosi titoksértés",
+     "description": "Beteg egészségügyi adatainak jogosulatlan kiadása vagy nyilvánosságra hozatala.",
+     "category": "szabalysertes",
+     "fine_min": 1000,
+     "fine_max": 3000,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [],
+     "sort": 10
+    },
+    {
+     "id": 136,
+     "chapter_id": 12,
+     "paragraph": "136. §",
+     "title": "Rendbontás egészségügyi intézményben",
+     "description": "Kórházban, rendelőben vagy mentőállomáson elkövetett garázda, a betegellátást zavaró viselkedés.",
+     "category": "vetseg",
+     "fine_min": 1500,
+     "fine_max": 4000,
+     "jail_min": 5,
+     "jail_max": 10,
+     "flags": [],
+     "sort": 11
+    },
+    {
+     "id": 137,
+     "chapter_id": 12,
+     "paragraph": "137. §",
+     "title": "Kegyeletsértés",
+     "description": "Holttest jogtalan elvitele, elrejtése, megcsonkítása vagy meggyalázása.",
+     "category": "buntett",
+     "fine_min": 4000,
+     "fine_max": 10000,
+     "jail_min": 10,
+     "jail_max": 25,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 12
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "number": "XIII.",
+   "title": "Önkormányzati bűncselekmények",
+   "description": "Los Santos önkormányzata, a városi vagyon, a helyi rendeletek, az engedélyezési eljárások és a választások elleni cselekmények.",
+   "sort": 12,
+   "items": [
+    {
+     "id": 138,
+     "chapter_id": 13,
+     "paragraph": "138. §",
+     "title": "Helyi rendelet megsértése",
+     "description": "Az önkormányzat által hozott rendelet (pl. kijárási tilalom, zajkorlátozás, parkolási rend) megszegése.",
+     "category": "szabalysertes",
+     "fine_min": 250,
+     "fine_max": 1500,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [],
+     "sort": 0
+    },
+    {
+     "id": 139,
+     "chapter_id": 13,
+     "paragraph": "139. §",
+     "title": "Közterület engedély nélküli használata",
+     "description": "Közterület (járda, park, út) engedély nélküli elfoglalása üzleti vagy egyéb célra.",
+     "category": "szabalysertes",
+     "fine_min": 500,
+     "fine_max": 2000,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [],
+     "sort": 1
+    },
+    {
+     "id": 140,
+     "chapter_id": 13,
+     "paragraph": "140. §",
+     "title": "Engedély nélküli építkezés",
+     "description": "Építmény építése, átalakítása vagy bontása építési engedély nélkül.",
+     "category": "szabalysertes",
+     "fine_min": 2000,
+     "fine_max": 6000,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [],
+     "sort": 2
+    },
+    {
+     "id": 141,
+     "chapter_id": 13,
+     "paragraph": "141. §",
+     "title": "Illegális hulladéklerakás",
+     "description": "Hulladék, roncs vagy szennyező anyag elhelyezése erre ki nem jelölt helyen.",
+     "category": "szabalysertes",
+     "fine_min": 1000,
+     "fine_max": 3000,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [],
+     "sort": 3
+    },
+    {
+     "id": 142,
+     "chapter_id": 13,
+     "paragraph": "142. §",
+     "title": "Közműlopás",
+     "description": "Áram, víz vagy gáz illegális vételezése, a mérőóra megkerülése vagy manipulálása.",
+     "category": "vetseg",
+     "fine_min": 2000,
+     "fine_max": 5000,
+     "jail_min": 0,
+     "jail_max": 10,
+     "flags": [],
+     "sort": 4
+    },
+    {
+     "id": 143,
+     "chapter_id": 13,
+     "paragraph": "143. §",
+     "title": "Városi jármű jogosulatlan használata",
+     "description": "Önkormányzati jármű (busz, kukásautó, munkagép) engedély nélküli vezetése vagy elvitele.",
+     "category": "vetseg",
+     "fine_min": 2000,
+     "fine_max": 5000,
+     "jail_min": 5,
+     "jail_max": 15,
+     "flags": [
+      "jarmu"
+     ],
+     "sort": 5
+    },
+    {
+     "id": 144,
+     "chapter_id": 13,
+     "paragraph": "144. §",
+     "title": "Engedélyezési csalás",
+     "description": "Hatósági engedély (üzleti, fegyver-, építési) megszerzése hamis adatokkal vagy megvesztegetéssel.",
+     "category": "buntett",
+     "fine_min": 4000,
+     "fine_max": 10000,
+     "jail_min": 10,
+     "jail_max": 25,
+     "flags": [],
+     "sort": 6
+    },
+    {
+     "id": 145,
+     "chapter_id": 13,
+     "paragraph": "145. §",
+     "title": "Költségvetési csalás",
+     "description": "Önkormányzati támogatás vagy pályázati pénz megszerzése, felhasználása valótlan adatokkal.",
+     "category": "buntett",
+     "fine_min": 8000,
+     "fine_max": 20000,
+     "jail_min": 20,
+     "jail_max": 40,
+     "flags": [],
+     "sort": 7
+    },
+    {
+     "id": 146,
+     "chapter_id": 13,
+     "paragraph": "146. §",
+     "title": "Közbeszerzési csalás",
+     "description": "Önkormányzati megrendelés, pályázat vagy tender eredményének jogtalan befolyásolása, összejátszás.",
+     "category": "buntett",
+     "fine_min": 10000,
+     "fine_max": 25000,
+     "jail_min": 20,
+     "jail_max": 45,
+     "flags": [],
+     "sort": 8
+    },
+    {
+     "id": 147,
+     "chapter_id": 13,
+     "paragraph": "147. §",
+     "title": "Választási csalás",
+     "description": "Választás vagy szavazás eredményének meghamisítása (hamis szavazat, a számlálás manipulálása).",
+     "category": "buntett",
+     "fine_min": 10000,
+     "fine_max": 25000,
+     "jail_min": 25,
+     "jail_max": 50,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 9
+    },
+    {
+     "id": 148,
+     "chapter_id": 13,
+     "paragraph": "148. §",
+     "title": "Szavazatvásárlás",
+     "description": "Szavazat megszerzése pénzért, ajándékért vagy fenyegetéssel.",
+     "category": "buntett",
+     "fine_min": 5000,
+     "fine_max": 12000,
+     "jail_min": 10,
+     "jail_max": 25,
+     "flags": [],
+     "sort": 10
+    },
+    {
+     "id": 149,
+     "chapter_id": 13,
+     "paragraph": "149. §",
+     "title": "Önkormányzati tisztségviselő elleni erőszak vagy fenyegetés",
+     "description": "Polgármester, képviselő vagy önkormányzati dolgozó bántalmazása, fenyegetése a tisztségével összefüggésben.",
+     "category": "buntett",
+     "fine_min": 6000,
+     "fine_max": 14000,
+     "jail_min": 20,
+     "jail_max": 40,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 11
+    },
+    {
+     "id": 150,
+     "chapter_id": 13,
+     "paragraph": "150. §",
+     "title": "Testületi ülés megzavarása",
+     "description": "Önkormányzati ülés, közmeghallgatás vagy hivatalos városi rendezvény szándékos megzavarása.",
+     "category": "vetseg",
+     "fine_min": 1000,
+     "fine_max": 3000,
+     "jail_min": 0,
+     "jail_max": 10,
+     "flags": [],
+     "sort": 12
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "number": "XIV.",
+   "title": "Szerelőtelepi és járműipari bűncselekmények",
+   "description": "Szerelőműhelyek, bontók, járműkereskedések és lefoglalótelepek működésével, valamint a járművek műszaki állapotával és azonosítóival összefüggő cselekmények.",
+   "sort": 13,
+   "items": [
+    {
+     "id": 151,
+     "chapter_id": 14,
+     "paragraph": "151. §",
+     "title": "Alvázszám meghamisítása",
+     "description": "Jármű alvázszámának vagy motorszámának eltávolítása, átütése, meghamisítása.",
+     "category": "buntett",
+     "fine_min": 6000,
+     "fine_max": 14000,
+     "jail_min": 15,
+     "jail_max": 30,
+     "flags": [
+      "jarmu"
+     ],
+     "sort": 0
+    },
+    {
+     "id": 152,
+     "chapter_id": 14,
+     "paragraph": "152. §",
+     "title": "Lopott jármű bontása vagy átalakítása",
+     "description": "Lopott jármű szétszerelése, átfestése, átalakítása értékesítés vagy elrejtés céljából (chop shop).",
+     "category": "buntett",
+     "fine_min": 10000,
+     "fine_max": 25000,
+     "jail_min": 25,
+     "jail_max": 50,
+     "flags": [
+      "korozheto",
+      "jarmu"
+     ],
+     "sort": 1
+    },
+    {
+     "id": 153,
+     "chapter_id": 14,
+     "paragraph": "153. §",
+     "title": "Lopott alkatrész értékesítése vagy beépítése",
+     "description": "Bűncselekményből származó alkatrész megvásárlása, eladása vagy járműbe szerelése.",
+     "category": "buntett",
+     "fine_min": 4000,
+     "fine_max": 10000,
+     "jail_min": 10,
+     "jail_max": 25,
+     "flags": [
+      "jarmu"
+     ],
+     "sort": 2
+    },
+    {
+     "id": 154,
+     "chapter_id": 14,
+     "paragraph": "154. §",
+     "title": "Rendszámtábla hamisítása",
+     "description": "Hamis, más járműről leszerelt vagy meghamisított rendszámtábla gyártása vagy felszerelése.",
+     "category": "vetseg",
+     "fine_min": 2000,
+     "fine_max": 6000,
+     "jail_min": 5,
+     "jail_max": 15,
+     "flags": [
+      "jarmu"
+     ],
+     "sort": 3
+    },
+    {
+     "id": 155,
+     "chapter_id": 14,
+     "paragraph": "155. §",
+     "title": "Tiltott járműátalakítás szolgáltatásként",
+     "description": "Nitro, tiltott fényszóró, túl hangos kipufogó vagy sötétített üveg beszerelése ügyfél járművébe.",
+     "category": "vetseg",
+     "fine_min": 2500,
+     "fine_max": 6000,
+     "jail_min": 0,
+     "jail_max": 10,
+     "flags": [
+      "jarmu"
+     ],
+     "sort": 4
+    },
+    {
+     "id": 156,
+     "chapter_id": 14,
+     "paragraph": "156. §",
+     "title": "Megkülönböztető jelzés jogosulatlan felszerelése",
+     "description": "Rendőrségi vagy mentős sziréna, villogó beszerelése vagy használata erre nem jogosult járművön.",
+     "category": "vetseg",
+     "fine_min": 3000,
+     "fine_max": 7000,
+     "jail_min": 5,
+     "jail_max": 15,
+     "flags": [
+      "jarmu"
+     ],
+     "sort": 5
+    },
+    {
+     "id": 157,
+     "chapter_id": 14,
+     "paragraph": "157. §",
+     "title": "Javítási csalás",
+     "description": "Nem elvégzett javítás kiszámlázása, felesleges munka elvégzése vagy szándékos túlszámlázás.",
+     "category": "vetseg",
+     "fine_min": 2000,
+     "fine_max": 6000,
+     "jail_min": 0,
+     "jail_max": 10,
+     "flags": [],
+     "sort": 6
+    },
+    {
+     "id": 158,
+     "chapter_id": 14,
+     "paragraph": "158. §",
+     "title": "Biztosítási csalás",
+     "description": "Baleset megrendezése, kár szándékos okozása vagy hamis kárbejelentés biztosítási összeg megszerzésére.",
+     "category": "buntett",
+     "fine_min": 5000,
+     "fine_max": 12000,
+     "jail_min": 10,
+     "jail_max": 25,
+     "flags": [],
+     "sort": 7
+    },
+    {
+     "id": 159,
+     "chapter_id": 14,
+     "paragraph": "159. §",
+     "title": "Ügyfél járművének jogosulatlan használata",
+     "description": "Javításra leadott jármű engedély nélküli használata vagy kölcsönadása.",
+     "category": "vetseg",
+     "fine_min": 1500,
+     "fine_max": 4000,
+     "jail_min": 0,
+     "jail_max": 10,
+     "flags": [],
+     "sort": 8
+    },
+    {
+     "id": 160,
+     "chapter_id": 14,
+     "paragraph": "160. §",
+     "title": "Jármű jogtalan visszatartása",
+     "description": "A kifizetett javítás után az ügyfél járművének jogtalan visszatartása, például további pénz kicsikarására.",
+     "category": "szabalysertes",
+     "fine_min": 1000,
+     "fine_max": 3000,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [],
+     "sort": 9
+    },
+    {
+     "id": 161,
+     "chapter_id": 14,
+     "paragraph": "161. §",
+     "title": "Műszakilag veszélyes jármű kiadása vagy eladása",
+     "description": "Fék-, kormány- vagy futóműhibás jármű tudatos visszaadása az ügyfélnek, illetve eladása.",
+     "category": "vetseg",
+     "fine_min": 2000,
+     "fine_max": 5000,
+     "jail_min": 5,
+     "jail_max": 10,
+     "flags": [
+      "jarmu"
+     ],
+     "sort": 10
+    },
+    {
+     "id": 162,
+     "chapter_id": 14,
+     "paragraph": "162. §",
+     "title": "Engedély nélküli szerelőműhely vagy bontó üzemeltetése",
+     "description": "Járműjavítás, -bontás vagy -átalakítás iparszerű végzése engedély nélkül.",
+     "category": "szabalysertes",
+     "fine_min": 2000,
+     "fine_max": 5000,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [],
+     "sort": 11
+    },
+    {
+     "id": 163,
+     "chapter_id": 14,
+     "paragraph": "163. §",
+     "title": "Lefoglalt jármű jogosulatlan kiadása vagy elvitele",
+     "description": "Hatóságilag lefoglalt vagy elszállított jármű engedély nélküli kiadása, illetve elvitele a lefoglalótelepről.",
+     "category": "vetseg",
+     "fine_min": 3000,
+     "fine_max": 8000,
+     "jail_min": 5,
+     "jail_max": 15,
+     "flags": [
+      "jarmu"
+     ],
+     "sort": 12
+    },
+    {
+     "id": 164,
+     "chapter_id": 14,
+     "paragraph": "164. §",
+     "title": "Veszélyes hulladék szabálytalan kezelése",
+     "description": "Fáradt olaj, akkumulátor, gumiabroncs vagy más veszélyes hulladék szabálytalan tárolása, elhelyezése.",
+     "category": "szabalysertes",
+     "fine_min": 1500,
+     "fine_max": 4000,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [],
+     "sort": 13
+    }
+   ]
   }
  ]
 }
