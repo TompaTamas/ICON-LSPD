@@ -1,0 +1,1760 @@
+{
+ "categories": {
+  "szabalysertes": "Szabálysértés",
+  "vetseg": "Vétség",
+  "buntett": "Bűntett"
+ },
+ "flags": {
+  "korozheto": "Körözhető",
+  "jogositvany": "Jogosítvány-bevonás",
+  "fegyver": "Fegyverelkobzás",
+  "jarmu": "Járműlefoglalás"
+ },
+ "chapters": [
+  {
+   "id": 1,
+   "number": "I.",
+   "title": "Általános rendelkezések",
+   "description": "**1. A törvény célja.** A BTK meghatározza, mely magatartások büntetendők Los Santos területén, és milyen büntetés szabható ki értük. Az intézkedő officer a tartományon belül a körülmények mérlegelésével dönt.\n\n**2. Fogalmak.**\n- **Szabálysértés** – kisebb jogsértés, jellemzően csak bírsággal jár.\n- **Vétség** – bírsággal és rövidebb szabadságvesztéssel büntethető.\n- **Bűntett** – súlyos bűncselekmény, hosszabb szabadságvesztéssel; az elkövető körözhető.\n\n**3. Börtönidő.** A büntetés hónapban értendő; RP-ben **1 hónap = 1 perc** a börtönben.\n\n**4. Halmazat.** Több bűncselekmény esetén a büntetések összeadódnak, de a börtönidő együttesen legfeljebb **150 hónap** lehet. Ennél súlyosabb büntetést csak a DOJ bírája szabhat ki.\n\n**5. Módosító tényezők.**\n- **Kísérlet:** a büntetés 50%-a.\n- **Bűnsegéd, felbujtó:** a büntetés 50–100%-a.\n- **Visszaesés** (30 napon belül ugyanaz a bűncselekmény): +25%.\n- **Enyhítő körülmény** (együttműködés, beismerés, első alkalom): a tartomány alsó fele.\n- **Súlyosító körülmény** (hivatalos személy, kiskorú, aljas indok, csoportos elkövetés): a tartomány felső fele.\n\n**6. Jogok.** A gyanúsítottat tájékoztatni kell a jogairól (hallgatás joga, ügyvédhez való jog). Ezek megsértése az eljárás felülvizsgálatát vonhatja maga után.\n\n**7. Jelölők.** *Körözhető*: elfogatóparancs adható ki. *Jogosítvány-bevonás*: a vezetői engedély bevonható. *Fegyverelkobzás*: az eszköz és a fegyver lefoglalható. *Járműlefoglalás*: a jármű lefoglalható / elszállítható.",
+   "sort": 0,
+   "items": []
+  },
+  {
+   "id": 2,
+   "number": "II.",
+   "title": "Közlekedési szabálysértések és bűncselekmények",
+   "description": "A közúti közlekedés biztonságát veszélyeztető cselekmények.",
+   "sort": 1,
+   "items": [
+    {
+     "id": 1,
+     "chapter_id": 2,
+     "paragraph": "1. §",
+     "title": "Gyorshajtás (legfeljebb 20 km/h túllépés)",
+     "description": "A megengedett legnagyobb sebesség legfeljebb 20 km/h-val történő túllépése.",
+     "category": "szabalysertes",
+     "fine_min": 250,
+     "fine_max": 500,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [],
+     "sort": 0
+    },
+    {
+     "id": 2,
+     "chapter_id": 2,
+     "paragraph": "2. §",
+     "title": "Gyorshajtás (21–50 km/h túllépés)",
+     "description": "A megengedett legnagyobb sebesség 21–50 km/h-val történő túllépése.",
+     "category": "szabalysertes",
+     "fine_min": 500,
+     "fine_max": 1500,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [],
+     "sort": 1
+    },
+    {
+     "id": 3,
+     "chapter_id": 2,
+     "paragraph": "3. §",
+     "title": "Súlyos gyorshajtás (50 km/h feletti túllépés)",
+     "description": "A sebességhatár 50 km/h-t meghaladó túllépése, különösen lakott területen.",
+     "category": "vetseg",
+     "fine_min": 1500,
+     "fine_max": 3000,
+     "jail_min": 0,
+     "jail_max": 10,
+     "flags": [
+      "jogositvany"
+     ],
+     "sort": 2
+    },
+    {
+     "id": 4,
+     "chapter_id": 2,
+     "paragraph": "4. §",
+     "title": "Piros jelzésen való áthaladás",
+     "description": "A tilos jelzés figyelmen kívül hagyása jelzőlámpás kereszteződésben.",
+     "category": "szabalysertes",
+     "fine_min": 300,
+     "fine_max": 800,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [],
+     "sort": 3
+    },
+    {
+     "id": 5,
+     "chapter_id": 2,
+     "paragraph": "5. §",
+     "title": "Stoptábla figyelmen kívül hagyása",
+     "description": "Megállás nélküli áthaladás „Állj! Elsőbbségadás kötelező” tábla mellett.",
+     "category": "szabalysertes",
+     "fine_min": 200,
+     "fine_max": 500,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [],
+     "sort": 4
+    },
+    {
+     "id": 6,
+     "chapter_id": 2,
+     "paragraph": "6. §",
+     "title": "Szabálytalan előzés",
+     "description": "Előzés tiltott helyen, záróvonalon át vagy a szembejövő forgalom veszélyeztetésével.",
+     "category": "szabalysertes",
+     "fine_min": 300,
+     "fine_max": 700,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [],
+     "sort": 5
+    },
+    {
+     "id": 7,
+     "chapter_id": 2,
+     "paragraph": "7. §",
+     "title": "Szabálytalan parkolás",
+     "description": "Megállás vagy várakozás tiltott helyen, a forgalom akadályozásával. A jármű elszállítható.",
+     "category": "szabalysertes",
+     "fine_min": 100,
+     "fine_max": 300,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [
+      "jarmu"
+     ],
+     "sort": 6
+    },
+    {
+     "id": 8,
+     "chapter_id": 2,
+     "paragraph": "8. §",
+     "title": "Forgalommal szemben közlekedés",
+     "description": "Egyirányú úton vagy úttesten a menetiránnyal szemben haladás.",
+     "category": "szabalysertes",
+     "fine_min": 500,
+     "fine_max": 1200,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [],
+     "sort": 7
+    },
+    {
+     "id": 9,
+     "chapter_id": 2,
+     "paragraph": "9. §",
+     "title": "Biztonsági öv vagy bukósisak hiánya",
+     "description": "Biztonsági öv, illetve motoron bukósisak használatának elmulasztása.",
+     "category": "szabalysertes",
+     "fine_min": 100,
+     "fine_max": 250,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [],
+     "sort": 8
+    },
+    {
+     "id": 10,
+     "chapter_id": 2,
+     "paragraph": "10. §",
+     "title": "Mobiltelefon használata vezetés közben",
+     "description": "Kézben tartott telefon használata a jármű vezetése közben.",
+     "category": "szabalysertes",
+     "fine_min": 150,
+     "fine_max": 400,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [],
+     "sort": 9
+    },
+    {
+     "id": 11,
+     "chapter_id": 2,
+     "paragraph": "11. §",
+     "title": "Vezetői engedély nélküli vezetés",
+     "description": "Gépjármű vezetése érvényes vezetői engedély nélkül.",
+     "category": "vetseg",
+     "fine_min": 1000,
+     "fine_max": 2500,
+     "jail_min": 0,
+     "jail_max": 5,
+     "flags": [
+      "jarmu"
+     ],
+     "sort": 10
+    },
+    {
+     "id": 12,
+     "chapter_id": 2,
+     "paragraph": "12. §",
+     "title": "Bevont engedéllyel történő vezetés",
+     "description": "Gépjármű vezetése a vezetői engedély bevonásának ideje alatt.",
+     "category": "vetseg",
+     "fine_min": 2000,
+     "fine_max": 4000,
+     "jail_min": 5,
+     "jail_max": 15,
+     "flags": [
+      "jarmu"
+     ],
+     "sort": 11
+    },
+    {
+     "id": 13,
+     "chapter_id": 2,
+     "paragraph": "13. §",
+     "title": "Ittas vezetés",
+     "description": "Gépjármű vezetése alkoholos befolyásoltság alatt.",
+     "category": "vetseg",
+     "fine_min": 1500,
+     "fine_max": 3000,
+     "jail_min": 5,
+     "jail_max": 15,
+     "flags": [
+      "jogositvany",
+      "jarmu"
+     ],
+     "sort": 12
+    },
+    {
+     "id": 14,
+     "chapter_id": 2,
+     "paragraph": "14. §",
+     "title": "Bódult állapotban történő vezetés",
+     "description": "Gépjármű vezetése kábítószer vagy más bódító szer hatása alatt.",
+     "category": "vetseg",
+     "fine_min": 2000,
+     "fine_max": 4000,
+     "jail_min": 5,
+     "jail_max": 20,
+     "flags": [
+      "jogositvany",
+      "jarmu"
+     ],
+     "sort": 13
+    },
+    {
+     "id": 15,
+     "chapter_id": 2,
+     "paragraph": "15. §",
+     "title": "Gondatlan vezetés",
+     "description": "A közlekedési szabályok gondatlan megszegése, amely balesetveszélyt okoz.",
+     "category": "szabalysertes",
+     "fine_min": 500,
+     "fine_max": 1500,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [],
+     "sort": 14
+    },
+    {
+     "id": 16,
+     "chapter_id": 2,
+     "paragraph": "16. §",
+     "title": "Veszélyeztető vezetés",
+     "description": "Mások életét vagy testi épségét tudatosan veszélyeztető vezetési stílus.",
+     "category": "vetseg",
+     "fine_min": 1500,
+     "fine_max": 3500,
+     "jail_min": 0,
+     "jail_max": 10,
+     "flags": [
+      "jogositvany"
+     ],
+     "sort": 15
+    },
+    {
+     "id": 17,
+     "chapter_id": 2,
+     "paragraph": "17. §",
+     "title": "Illegális gyorsasági verseny",
+     "description": "Közúton szervezett vagy abban részt vevő engedély nélküli verseny.",
+     "category": "vetseg",
+     "fine_min": 3000,
+     "fine_max": 6000,
+     "jail_min": 10,
+     "jail_max": 20,
+     "flags": [
+      "jogositvany",
+      "jarmu"
+     ],
+     "sort": 16
+    },
+    {
+     "id": 18,
+     "chapter_id": 2,
+     "paragraph": "18. §",
+     "title": "Cserbenhagyás (anyagi kár)",
+     "description": "A baleset helyszínének elhagyása, ha csak anyagi kár keletkezett.",
+     "category": "vetseg",
+     "fine_min": 1500,
+     "fine_max": 3000,
+     "jail_min": 5,
+     "jail_max": 10,
+     "flags": [
+      "jogositvany"
+     ],
+     "sort": 17
+    },
+    {
+     "id": 19,
+     "chapter_id": 2,
+     "paragraph": "19. §",
+     "title": "Cserbenhagyás (személyi sérülés)",
+     "description": "A baleset helyszínének elhagyása, ha személy megsérült, segítségnyújtás nélkül.",
+     "category": "buntett",
+     "fine_min": 5000,
+     "fine_max": 10000,
+     "jail_min": 20,
+     "jail_max": 40,
+     "flags": [
+      "korozheto",
+      "jogositvany"
+     ],
+     "sort": 18
+    },
+    {
+     "id": 20,
+     "chapter_id": 2,
+     "paragraph": "20. §",
+     "title": "Megállásra való felszólítás figyelmen kívül hagyása",
+     "description": "A rendőri megállítási jelzés figyelmen kívül hagyása, menekülés nélkül.",
+     "category": "vetseg",
+     "fine_min": 1000,
+     "fine_max": 2000,
+     "jail_min": 5,
+     "jail_max": 10,
+     "flags": [],
+     "sort": 19
+    },
+    {
+     "id": 21,
+     "chapter_id": 2,
+     "paragraph": "21. §",
+     "title": "Menekülés rendőri üldözés elől járművel",
+     "description": "Járművel történő szökés a rendőri intézkedés elől, üldözést kiváltva.",
+     "category": "buntett",
+     "fine_min": 3000,
+     "fine_max": 7500,
+     "jail_min": 15,
+     "jail_max": 30,
+     "flags": [
+      "korozheto",
+      "jogositvany",
+      "jarmu"
+     ],
+     "sort": 20
+    },
+    {
+     "id": 22,
+     "chapter_id": 2,
+     "paragraph": "22. §",
+     "title": "Rendszám vagy forgalmi engedély nélküli jármű",
+     "description": "Jármű üzemeltetése érvényes rendszám vagy forgalmi engedély nélkül.",
+     "category": "szabalysertes",
+     "fine_min": 500,
+     "fine_max": 1000,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [
+      "jarmu"
+     ],
+     "sort": 21
+    },
+    {
+     "id": 23,
+     "chapter_id": 2,
+     "paragraph": "23. §",
+     "title": "Műszakilag alkalmatlan vagy illegálisan átalakított jármű",
+     "description": "Engedély nélküli átalakítás (pl. nitro, túlzottan sötétített ablak, hiányzó világítás).",
+     "category": "szabalysertes",
+     "fine_min": 300,
+     "fine_max": 1000,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [
+      "jarmu"
+     ],
+     "sort": 22
+    },
+    {
+     "id": 24,
+     "chapter_id": 2,
+     "paragraph": "24. §",
+     "title": "Forgalom akadályozása",
+     "description": "Jármű vagy tárgy úton hagyása, a forgalom indokolatlan akadályozása.",
+     "category": "szabalysertes",
+     "fine_min": 200,
+     "fine_max": 500,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [],
+     "sort": 23
+    },
+    {
+     "id": 25,
+     "chapter_id": 2,
+     "paragraph": "25. §",
+     "title": "Járdán vagy zöldterületen közlekedés",
+     "description": "Gépjárművel járdán, parkban vagy egyéb nem közlekedésre szolgáló területen haladás.",
+     "category": "szabalysertes",
+     "fine_min": 300,
+     "fine_max": 800,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [],
+     "sort": 24
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "number": "III.",
+   "title": "Közrend elleni cselekmények",
+   "description": "A közrendet, a köznyugalmat és a közterületek rendjét sértő cselekmények.",
+   "sort": 2,
+   "items": [
+    {
+     "id": 26,
+     "chapter_id": 3,
+     "paragraph": "26. §",
+     "title": "Csendháborítás",
+     "description": "Indokolatlan, másokat zavaró zaj okozása, különösen éjszaka.",
+     "category": "szabalysertes",
+     "fine_min": 200,
+     "fine_max": 500,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [],
+     "sort": 0
+    },
+    {
+     "id": 27,
+     "chapter_id": 3,
+     "paragraph": "27. §",
+     "title": "Ittas, botrányos viselkedés közterületen",
+     "description": "Közterületen alkoholos befolyásoltság alatt másokat megbotránkoztató viselkedés.",
+     "category": "szabalysertes",
+     "fine_min": 250,
+     "fine_max": 600,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [],
+     "sort": 1
+    },
+    {
+     "id": 28,
+     "chapter_id": 3,
+     "paragraph": "28. §",
+     "title": "Garázdaság",
+     "description": "Kihívóan közösségellenes, erőszakos magatartás, amely alkalmas a megbotránkozás vagy riadalom keltésére.",
+     "category": "vetseg",
+     "fine_min": 1000,
+     "fine_max": 2500,
+     "jail_min": 5,
+     "jail_max": 15,
+     "flags": [],
+     "sort": 2
+    },
+    {
+     "id": 29,
+     "chapter_id": 3,
+     "paragraph": "29. §",
+     "title": "Csoportos garázdaság",
+     "description": "Garázdaság csoportosan, felfegyverkezve vagy nagy nyilvánosság előtt.",
+     "category": "buntett",
+     "fine_min": 3000,
+     "fine_max": 6000,
+     "jail_min": 15,
+     "jail_max": 30,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 3
+    },
+    {
+     "id": 30,
+     "chapter_id": 3,
+     "paragraph": "30. §",
+     "title": "Közszeméremsértés",
+     "description": "Nyilvános helyen szeméremsértő magatartás tanúsítása.",
+     "category": "vetseg",
+     "fine_min": 500,
+     "fine_max": 1500,
+     "jail_min": 0,
+     "jail_max": 10,
+     "flags": [],
+     "sort": 4
+    },
+    {
+     "id": 31,
+     "chapter_id": 3,
+     "paragraph": "31. §",
+     "title": "Engedély nélküli gyülekezés, rendzavarás",
+     "description": "Engedély nélküli rendezvény vagy tüntetés, amely a közrendet zavarja.",
+     "category": "szabalysertes",
+     "fine_min": 500,
+     "fine_max": 1500,
+     "jail_min": 0,
+     "jail_max": 5,
+     "flags": [],
+     "sort": 5
+    },
+    {
+     "id": 32,
+     "chapter_id": 3,
+     "paragraph": "32. §",
+     "title": "Szemetelés",
+     "description": "Hulladék közterületen való elhagyása.",
+     "category": "szabalysertes",
+     "fine_min": 100,
+     "fine_max": 300,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [],
+     "sort": 6
+    },
+    {
+     "id": 33,
+     "chapter_id": 3,
+     "paragraph": "33. §",
+     "title": "Segélyhívó vonal zaklatása, hamis bejelentés",
+     "description": "A segélyhívó vonal indokolatlan hívása vagy szándékosan hamis bejelentés tétele.",
+     "category": "vetseg",
+     "fine_min": 1000,
+     "fine_max": 3000,
+     "jail_min": 5,
+     "jail_max": 15,
+     "flags": [],
+     "sort": 7
+    },
+    {
+     "id": 34,
+     "chapter_id": 3,
+     "paragraph": "34. §",
+     "title": "Lázítás, erőszakra való felhívás",
+     "description": "Nagy nyilvánosság előtt erőszakra vagy bűncselekmény elkövetésére való felhívás.",
+     "category": "buntett",
+     "fine_min": 3000,
+     "fine_max": 7000,
+     "jail_min": 15,
+     "jail_max": 30,
+     "flags": [],
+     "sort": 8
+    },
+    {
+     "id": 35,
+     "chapter_id": 3,
+     "paragraph": "35. §",
+     "title": "Rongálás (kisebb érték)",
+     "description": "Idegen vagyontárgy megrongálása vagy megsemmisítése kisebb értékben.",
+     "category": "vetseg",
+     "fine_min": 500,
+     "fine_max": 2000,
+     "jail_min": 0,
+     "jail_max": 10,
+     "flags": [],
+     "sort": 9
+    },
+    {
+     "id": 36,
+     "chapter_id": 3,
+     "paragraph": "36. §",
+     "title": "Rongálás (jelentős érték vagy középület)",
+     "description": "Jelentős értékű vagy közcélú vagyontárgy (középület, jármű, közmű) rongálása.",
+     "category": "buntett",
+     "fine_min": 2000,
+     "fine_max": 6000,
+     "jail_min": 10,
+     "jail_max": 25,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 10
+    },
+    {
+     "id": 37,
+     "chapter_id": 3,
+     "paragraph": "37. §",
+     "title": "Graffiti, falfirka",
+     "description": "Épület, jármű vagy köztárgy engedély nélküli összefirkálása.",
+     "category": "szabalysertes",
+     "fine_min": 500,
+     "fine_max": 1500,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [],
+     "sort": 11
+    },
+    {
+     "id": 38,
+     "chapter_id": 3,
+     "paragraph": "38. §",
+     "title": "Tiltott területre lépés",
+     "description": "Lezárt, magán- vagy korlátozott területre való jogosulatlan belépés.",
+     "category": "szabalysertes",
+     "fine_min": 500,
+     "fine_max": 1500,
+     "jail_min": 0,
+     "jail_max": 5,
+     "flags": [],
+     "sort": 12
+    },
+    {
+     "id": 39,
+     "chapter_id": 3,
+     "paragraph": "39. §",
+     "title": "Magánlaksértés",
+     "description": "Más lakásába, házába vagy bekerített helyére jogosulatlan behatolás.",
+     "category": "vetseg",
+     "fine_min": 1500,
+     "fine_max": 3000,
+     "jail_min": 5,
+     "jail_max": 15,
+     "flags": [],
+     "sort": 13
+    },
+    {
+     "id": 40,
+     "chapter_id": 3,
+     "paragraph": "40. §",
+     "title": "Arc eltakarása bűncselekmény elkövetésekor",
+     "description": "Maszk vagy egyéb arcot eltakaró eszköz viselése bűncselekmény elkövetése során (súlyosító körülmény).",
+     "category": "vetseg",
+     "fine_min": 500,
+     "fine_max": 1000,
+     "jail_min": 0,
+     "jail_max": 5,
+     "flags": [],
+     "sort": 14
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "number": "IV.",
+   "title": "Személy elleni bűncselekmények",
+   "description": "Az élet, a testi épség, a személyi szabadság és az emberi méltóság elleni cselekmények.",
+   "sort": 3,
+   "items": [
+    {
+     "id": 41,
+     "chapter_id": 4,
+     "paragraph": "41. §",
+     "title": "Becsületsértés, rágalmazás",
+     "description": "Más becsületének csorbítására alkalmas kifejezés vagy valótlan tényállítás.",
+     "category": "szabalysertes",
+     "fine_min": 300,
+     "fine_max": 1000,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [],
+     "sort": 0
+    },
+    {
+     "id": 42,
+     "chapter_id": 4,
+     "paragraph": "42. §",
+     "title": "Zaklatás",
+     "description": "Más rendszeres vagy tartós háborgatása, megfélemlítése.",
+     "category": "vetseg",
+     "fine_min": 1000,
+     "fine_max": 2500,
+     "jail_min": 5,
+     "jail_max": 10,
+     "flags": [],
+     "sort": 1
+    },
+    {
+     "id": 43,
+     "chapter_id": 4,
+     "paragraph": "43. §",
+     "title": "Veszélyes fenyegetés",
+     "description": "Súlyos sérelem kilátásba helyezése, amely alkalmas komoly félelem keltésére.",
+     "category": "vetseg",
+     "fine_min": 1500,
+     "fine_max": 3000,
+     "jail_min": 5,
+     "jail_max": 15,
+     "flags": [],
+     "sort": 2
+    },
+    {
+     "id": 44,
+     "chapter_id": 4,
+     "paragraph": "44. §",
+     "title": "Könnyű testi sértés",
+     "description": "Más testi épségének megsértése, 8 napon belül gyógyuló sérüléssel.",
+     "category": "vetseg",
+     "fine_min": 1500,
+     "fine_max": 3000,
+     "jail_min": 5,
+     "jail_max": 15,
+     "flags": [],
+     "sort": 3
+    },
+    {
+     "id": 45,
+     "chapter_id": 4,
+     "paragraph": "45. §",
+     "title": "Súlyos testi sértés",
+     "description": "Más testi épségének megsértése, 8 napon túl gyógyuló sérüléssel.",
+     "category": "buntett",
+     "fine_min": 3500,
+     "fine_max": 7000,
+     "jail_min": 15,
+     "jail_max": 30,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 4
+    },
+    {
+     "id": 46,
+     "chapter_id": 4,
+     "paragraph": "46. §",
+     "title": "Testi sértés fegyverrel",
+     "description": "Testi sértés lőfegyverrel, szúró-vágó eszközzel vagy más veszélyes eszközzel.",
+     "category": "buntett",
+     "fine_min": 5000,
+     "fine_max": 10000,
+     "jail_min": 20,
+     "jail_max": 40,
+     "flags": [
+      "korozheto",
+      "fegyver"
+     ],
+     "sort": 5
+    },
+    {
+     "id": 47,
+     "chapter_id": 4,
+     "paragraph": "47. §",
+     "title": "Személyi szabadság megsértése",
+     "description": "Más személyes szabadságtól való jogellenes megfosztása.",
+     "category": "buntett",
+     "fine_min": 4000,
+     "fine_max": 8000,
+     "jail_min": 15,
+     "jail_max": 30,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 6
+    },
+    {
+     "id": 48,
+     "chapter_id": 4,
+     "paragraph": "48. §",
+     "title": "Emberrablás",
+     "description": "Személy fogva tartása követelés érvényesítése céljából.",
+     "category": "buntett",
+     "fine_min": 8000,
+     "fine_max": 15000,
+     "jail_min": 30,
+     "jail_max": 60,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 7
+    },
+    {
+     "id": 49,
+     "chapter_id": 4,
+     "paragraph": "49. §",
+     "title": "Túszejtés",
+     "description": "Személy fogva tartása hatóság vagy harmadik személy kényszerítésére.",
+     "category": "buntett",
+     "fine_min": 10000,
+     "fine_max": 20000,
+     "jail_min": 40,
+     "jail_max": 70,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 8
+    },
+    {
+     "id": 50,
+     "chapter_id": 4,
+     "paragraph": "50. §",
+     "title": "Emberölés kísérlete",
+     "description": "Más megölésére irányuló, de be nem fejezett cselekmény.",
+     "category": "buntett",
+     "fine_min": 10000,
+     "fine_max": 20000,
+     "jail_min": 40,
+     "jail_max": 70,
+     "flags": [
+      "korozheto",
+      "fegyver"
+     ],
+     "sort": 9
+    },
+    {
+     "id": 51,
+     "chapter_id": 4,
+     "paragraph": "51. §",
+     "title": "Gondatlan emberölés",
+     "description": "Más halálának gondatlan okozása (pl. közlekedési balesettel).",
+     "category": "buntett",
+     "fine_min": 8000,
+     "fine_max": 15000,
+     "jail_min": 25,
+     "jail_max": 45,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 10
+    },
+    {
+     "id": 52,
+     "chapter_id": 4,
+     "paragraph": "52. §",
+     "title": "Emberölés",
+     "description": "Más ember szándékos megölése.",
+     "category": "buntett",
+     "fine_min": 15000,
+     "fine_max": 30000,
+     "jail_min": 60,
+     "jail_max": 100,
+     "flags": [
+      "korozheto",
+      "fegyver"
+     ],
+     "sort": 11
+    },
+    {
+     "id": 53,
+     "chapter_id": 4,
+     "paragraph": "53. §",
+     "title": "Előre kitervelt emberölés",
+     "description": "Előre megfontolt szándékkal, kitervelten elkövetett emberölés.",
+     "category": "buntett",
+     "fine_min": 25000,
+     "fine_max": 50000,
+     "jail_min": 100,
+     "jail_max": 150,
+     "flags": [
+      "korozheto",
+      "fegyver"
+     ],
+     "sort": 12
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "number": "V.",
+   "title": "Vagyon elleni bűncselekmények",
+   "description": "Mások vagyonát, tulajdonát sértő cselekmények.",
+   "sort": 4,
+   "items": [
+    {
+     "id": 54,
+     "chapter_id": 5,
+     "paragraph": "54. §",
+     "title": "Lopás (1 000 $ alatti érték)",
+     "description": "Idegen ingó dolog elvétele jogtalan eltulajdonítás céljából, kisebb értékben.",
+     "category": "vetseg",
+     "fine_min": 500,
+     "fine_max": 1500,
+     "jail_min": 0,
+     "jail_max": 5,
+     "flags": [],
+     "sort": 0
+    },
+    {
+     "id": 55,
+     "chapter_id": 5,
+     "paragraph": "55. §",
+     "title": "Lopás (1 000 $ feletti érték)",
+     "description": "Idegen ingó dolog elvétele jogtalan eltulajdonítás céljából, jelentős értékben.",
+     "category": "vetseg",
+     "fine_min": 1500,
+     "fine_max": 4000,
+     "jail_min": 5,
+     "jail_max": 15,
+     "flags": [],
+     "sort": 1
+    },
+    {
+     "id": 56,
+     "chapter_id": 5,
+     "paragraph": "56. §",
+     "title": "Betöréses lopás",
+     "description": "Lopás épületbe vagy zárt helyre való erőszakos behatolással.",
+     "category": "buntett",
+     "fine_min": 3000,
+     "fine_max": 7000,
+     "jail_min": 15,
+     "jail_max": 30,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 2
+    },
+    {
+     "id": 57,
+     "chapter_id": 5,
+     "paragraph": "57. §",
+     "title": "Járműlopás",
+     "description": "Más járművének jogtalan eltulajdonítása vagy elvétele.",
+     "category": "buntett",
+     "fine_min": 3000,
+     "fine_max": 6000,
+     "jail_min": 10,
+     "jail_max": 25,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 3
+    },
+    {
+     "id": 58,
+     "chapter_id": 5,
+     "paragraph": "58. §",
+     "title": "Járműfeltörés",
+     "description": "Jármű feltörése vagy abból érték eltulajdonítása.",
+     "category": "vetseg",
+     "fine_min": 1500,
+     "fine_max": 3000,
+     "jail_min": 5,
+     "jail_max": 15,
+     "flags": [],
+     "sort": 4
+    },
+    {
+     "id": 59,
+     "chapter_id": 5,
+     "paragraph": "59. §",
+     "title": "Rablás",
+     "description": "Lopás erőszakkal vagy fenyegetéssel.",
+     "category": "buntett",
+     "fine_min": 5000,
+     "fine_max": 10000,
+     "jail_min": 20,
+     "jail_max": 40,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 5
+    },
+    {
+     "id": 60,
+     "chapter_id": 5,
+     "paragraph": "60. §",
+     "title": "Fegyveres rablás (üzlet, benzinkút)",
+     "description": "Rablás lőfegyverrel vagy más veszélyes eszközzel üzlet, benzinkút ellen.",
+     "category": "buntett",
+     "fine_min": 8000,
+     "fine_max": 15000,
+     "jail_min": 30,
+     "jail_max": 50,
+     "flags": [
+      "korozheto",
+      "fegyver"
+     ],
+     "sort": 6
+    },
+    {
+     "id": 61,
+     "chapter_id": 5,
+     "paragraph": "61. §",
+     "title": "Fegyveres rablás (bank, ékszerbolt, pénzszállító)",
+     "description": "Kiemelt célpont (bank, ékszerbolt, pénzszállító) elleni fegyveres rablás.",
+     "category": "buntett",
+     "fine_min": 15000,
+     "fine_max": 30000,
+     "jail_min": 50,
+     "jail_max": 80,
+     "flags": [
+      "korozheto",
+      "fegyver"
+     ],
+     "sort": 7
+    },
+    {
+     "id": 62,
+     "chapter_id": 5,
+     "paragraph": "62. §",
+     "title": "Csalás",
+     "description": "Jogtalan haszonszerzés céljából tévedésbe ejtés vagy tévedésben tartás.",
+     "category": "vetseg",
+     "fine_min": 2000,
+     "fine_max": 5000,
+     "jail_min": 5,
+     "jail_max": 20,
+     "flags": [],
+     "sort": 8
+    },
+    {
+     "id": 63,
+     "chapter_id": 5,
+     "paragraph": "63. §",
+     "title": "Sikkasztás",
+     "description": "A rábízott idegen dolog jogtalan eltulajdonítása.",
+     "category": "buntett",
+     "fine_min": 3000,
+     "fine_max": 8000,
+     "jail_min": 10,
+     "jail_max": 25,
+     "flags": [],
+     "sort": 9
+    },
+    {
+     "id": 64,
+     "chapter_id": 5,
+     "paragraph": "64. §",
+     "title": "Orgazdaság",
+     "description": "Bűncselekményből származó dolog megszerzése, elrejtése vagy értékesítése.",
+     "category": "vetseg",
+     "fine_min": 1500,
+     "fine_max": 4000,
+     "jail_min": 5,
+     "jail_max": 15,
+     "flags": [],
+     "sort": 10
+    },
+    {
+     "id": 65,
+     "chapter_id": 5,
+     "paragraph": "65. §",
+     "title": "Zsarolás",
+     "description": "Erőszakkal vagy fenyegetéssel más kényszerítése vagyoni hátrány elszenvedésére.",
+     "category": "buntett",
+     "fine_min": 5000,
+     "fine_max": 10000,
+     "jail_min": 20,
+     "jail_max": 35,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 11
+    },
+    {
+     "id": 66,
+     "chapter_id": 5,
+     "paragraph": "66. §",
+     "title": "Okirat-hamisítás",
+     "description": "Hamis vagy hamisított okirat (igazolvány, engedély) készítése vagy felhasználása.",
+     "category": "vetseg",
+     "fine_min": 2000,
+     "fine_max": 5000,
+     "jail_min": 10,
+     "jail_max": 20,
+     "flags": [],
+     "sort": 12
+    },
+    {
+     "id": 67,
+     "chapter_id": 5,
+     "paragraph": "67. §",
+     "title": "Pénzhamisítás",
+     "description": "Hamis pénz készítése, forgalomba hozatala.",
+     "category": "buntett",
+     "fine_min": 5000,
+     "fine_max": 12000,
+     "jail_min": 20,
+     "jail_max": 40,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 13
+    },
+    {
+     "id": 68,
+     "chapter_id": 5,
+     "paragraph": "68. §",
+     "title": "Gyújtogatás",
+     "description": "Szándékos tűzokozás, amely vagyontárgyat vagy személyt veszélyeztet.",
+     "category": "buntett",
+     "fine_min": 5000,
+     "fine_max": 12000,
+     "jail_min": 20,
+     "jail_max": 40,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 14
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "number": "VI.",
+   "title": "Fegyverrel kapcsolatos bűncselekmények",
+   "description": "Lőfegyverek, lőszerek, robbanóanyagok és veszélyes eszközök tartásával és használatával összefüggő cselekmények.",
+   "sort": 5,
+   "items": [
+    {
+     "id": 69,
+     "chapter_id": 6,
+     "paragraph": "69. §",
+     "title": "Fegyver viselése tiltott helyen",
+     "description": "Engedéllyel tartott fegyver viselése tiltott helyen (pl. középület, kórház).",
+     "category": "szabalysertes",
+     "fine_min": 500,
+     "fine_max": 1500,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [
+      "fegyver"
+     ],
+     "sort": 0
+    },
+    {
+     "id": 70,
+     "chapter_id": 6,
+     "paragraph": "70. §",
+     "title": "Engedély nélküli lőfegyvertartás (kézifegyver)",
+     "description": "Kézi lőfegyver tartása fegyvertartási engedély nélkül.",
+     "category": "vetseg",
+     "fine_min": 3000,
+     "fine_max": 6000,
+     "jail_min": 10,
+     "jail_max": 20,
+     "flags": [
+      "fegyver"
+     ],
+     "sort": 1
+    },
+    {
+     "id": 71,
+     "chapter_id": 6,
+     "paragraph": "71. §",
+     "title": "Tiltott fegyver tartása",
+     "description": "Automata vagy katonai fegyver, illetve egyéb tiltott fegyver tartása.",
+     "category": "buntett",
+     "fine_min": 8000,
+     "fine_max": 15000,
+     "jail_min": 25,
+     "jail_max": 45,
+     "flags": [
+      "korozheto",
+      "fegyver"
+     ],
+     "sort": 2
+    },
+    {
+     "id": 72,
+     "chapter_id": 6,
+     "paragraph": "72. §",
+     "title": "Robbanóanyag birtoklása",
+     "description": "Robbanóanyag vagy robbantószerkezet engedély nélküli birtoklása.",
+     "category": "buntett",
+     "fine_min": 10000,
+     "fine_max": 20000,
+     "jail_min": 30,
+     "jail_max": 60,
+     "flags": [
+      "korozheto",
+      "fegyver"
+     ],
+     "sort": 3
+    },
+    {
+     "id": 73,
+     "chapter_id": 6,
+     "paragraph": "73. §",
+     "title": "Lövöldözés közterületen",
+     "description": "Lőfegyver használata lakott területen, közterületen, mások veszélyeztetésével.",
+     "category": "buntett",
+     "fine_min": 5000,
+     "fine_max": 10000,
+     "jail_min": 15,
+     "jail_max": 30,
+     "flags": [
+      "korozheto",
+      "fegyver"
+     ],
+     "sort": 4
+    },
+    {
+     "id": 74,
+     "chapter_id": 6,
+     "paragraph": "74. §",
+     "title": "Fenyegetés lőfegyverrel",
+     "description": "Lőfegyver fenyegető előmutatása vagy másra fogása.",
+     "category": "buntett",
+     "fine_min": 3000,
+     "fine_max": 7000,
+     "jail_min": 10,
+     "jail_max": 25,
+     "flags": [
+      "fegyver"
+     ],
+     "sort": 5
+    },
+    {
+     "id": 75,
+     "chapter_id": 6,
+     "paragraph": "75. §",
+     "title": "Fegyverkereskedelem",
+     "description": "Lőfegyver, lőszer vagy fegyveralkatrész engedély nélküli forgalmazása.",
+     "category": "buntett",
+     "fine_min": 15000,
+     "fine_max": 30000,
+     "jail_min": 40,
+     "jail_max": 70,
+     "flags": [
+      "korozheto",
+      "fegyver"
+     ],
+     "sort": 6
+    },
+    {
+     "id": 76,
+     "chapter_id": 6,
+     "paragraph": "76. §",
+     "title": "Szúró-vágó eszköz közterületen",
+     "description": "Kés vagy más szúró-vágó eszköz indokolatlan magánál tartása közterületen.",
+     "category": "szabalysertes",
+     "fine_min": 500,
+     "fine_max": 1500,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [
+      "fegyver"
+     ],
+     "sort": 7
+    },
+    {
+     "id": 77,
+     "chapter_id": 6,
+     "paragraph": "77. §",
+     "title": "Fegyverhasználat ittasan",
+     "description": "Lőfegyver kezelése vagy viselése alkoholos befolyásoltság alatt.",
+     "category": "vetseg",
+     "fine_min": 2000,
+     "fine_max": 4000,
+     "jail_min": 5,
+     "jail_max": 15,
+     "flags": [
+      "fegyver"
+     ],
+     "sort": 8
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "number": "VII.",
+   "title": "Kábítószerrel kapcsolatos bűncselekmények",
+   "description": "Kábítószer és pszichoaktív anyagok fogyasztása, birtoklása, előállítása és forgalmazása.",
+   "sort": 6,
+   "items": [
+    {
+     "id": 78,
+     "chapter_id": 7,
+     "paragraph": "78. §",
+     "title": "Kábítószer fogyasztása",
+     "description": "Kábítószer fogyasztása közterületen vagy annak bizonyított fogyasztása.",
+     "category": "szabalysertes",
+     "fine_min": 500,
+     "fine_max": 1500,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [],
+     "sort": 0
+    },
+    {
+     "id": 79,
+     "chapter_id": 7,
+     "paragraph": "79. §",
+     "title": "Csekély mennyiségű kábítószer birtoklása",
+     "description": "Saját használatra szolgáló, csekély mennyiségű kábítószer birtoklása.",
+     "category": "vetseg",
+     "fine_min": 1000,
+     "fine_max": 2500,
+     "jail_min": 0,
+     "jail_max": 10,
+     "flags": [],
+     "sort": 1
+    },
+    {
+     "id": 80,
+     "chapter_id": 7,
+     "paragraph": "80. §",
+     "title": "Jelentős mennyiségű kábítószer birtoklása",
+     "description": "A csekély mennyiséget meghaladó kábítószer birtoklása.",
+     "category": "buntett",
+     "fine_min": 5000,
+     "fine_max": 10000,
+     "jail_min": 20,
+     "jail_max": 35,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 2
+    },
+    {
+     "id": 81,
+     "chapter_id": 7,
+     "paragraph": "81. §",
+     "title": "Kábítószer-terjesztés",
+     "description": "Kábítószer eladása, átadása vagy forgalomba hozatala.",
+     "category": "buntett",
+     "fine_min": 8000,
+     "fine_max": 15000,
+     "jail_min": 25,
+     "jail_max": 45,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 3
+    },
+    {
+     "id": 82,
+     "chapter_id": 7,
+     "paragraph": "82. §",
+     "title": "Kábítószer-előállítás",
+     "description": "Kábítószer termesztése, előállítása vagy labor üzemeltetése.",
+     "category": "buntett",
+     "fine_min": 15000,
+     "fine_max": 30000,
+     "jail_min": 40,
+     "jail_max": 70,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 4
+    },
+    {
+     "id": 83,
+     "chapter_id": 7,
+     "paragraph": "83. §",
+     "title": "Kábítószer-csempészet",
+     "description": "Kábítószer nagy tételben történő szállítása, csempészete.",
+     "category": "buntett",
+     "fine_min": 15000,
+     "fine_max": 30000,
+     "jail_min": 40,
+     "jail_max": 70,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 5
+    },
+    {
+     "id": 84,
+     "chapter_id": 7,
+     "paragraph": "84. §",
+     "title": "Kábítószer-forgalmazáshoz eszköz birtoklása",
+     "description": "Forgalmazásra utaló eszközök (mérleg, adagolótasakok) birtoklása.",
+     "category": "vetseg",
+     "fine_min": 1000,
+     "fine_max": 2000,
+     "jail_min": 0,
+     "jail_max": 5,
+     "flags": [],
+     "sort": 6
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "number": "VIII.",
+   "title": "Hatóság és igazságszolgáltatás elleni bűncselekmények",
+   "description": "A hatóságok működését, a hivatalos személyeket és az igazságszolgáltatást sértő cselekmények.",
+   "sort": 7,
+   "items": [
+    {
+     "id": 85,
+     "chapter_id": 8,
+     "paragraph": "85. §",
+     "title": "Rendőri intézkedés akadályozása",
+     "description": "A rendőri intézkedés szándékos zavarása, megnehezítése.",
+     "category": "vetseg",
+     "fine_min": 1000,
+     "fine_max": 2500,
+     "jail_min": 5,
+     "jail_max": 15,
+     "flags": [],
+     "sort": 0
+    },
+    {
+     "id": 86,
+     "chapter_id": 8,
+     "paragraph": "86. §",
+     "title": "Menekülés gyalogosan intézkedés elől",
+     "description": "Gyalogos szökés vagy elfutás a rendőri intézkedés elől.",
+     "category": "vetseg",
+     "fine_min": 1000,
+     "fine_max": 2000,
+     "jail_min": 5,
+     "jail_max": 10,
+     "flags": [],
+     "sort": 1
+    },
+    {
+     "id": 87,
+     "chapter_id": 8,
+     "paragraph": "87. §",
+     "title": "Hamis adatközlés, igazoltatás megtagadása",
+     "description": "Személyazonosság eltitkolása, hamis adatok közlése a hatóság felé.",
+     "category": "vetseg",
+     "fine_min": 1000,
+     "fine_max": 2500,
+     "jail_min": 5,
+     "jail_max": 10,
+     "flags": [],
+     "sort": 2
+    },
+    {
+     "id": 88,
+     "chapter_id": 8,
+     "paragraph": "88. §",
+     "title": "Hivatalos személy elleni erőszak",
+     "description": "Erőszak vagy fenyegetés hivatalos személy ellen, eljárása során vagy miatt.",
+     "category": "buntett",
+     "fine_min": 5000,
+     "fine_max": 10000,
+     "jail_min": 20,
+     "jail_max": 40,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 3
+    },
+    {
+     "id": 89,
+     "chapter_id": 8,
+     "paragraph": "89. §",
+     "title": "Hivatalos személy megölése vagy annak kísérlete",
+     "description": "Rendőr, mentős, bíró vagy más hivatalos személy megölése, illetve annak kísérlete.",
+     "category": "buntett",
+     "fine_min": 30000,
+     "fine_max": 60000,
+     "jail_min": 120,
+     "jail_max": 150,
+     "flags": [
+      "korozheto",
+      "fegyver"
+     ],
+     "sort": 4
+    },
+    {
+     "id": 90,
+     "chapter_id": 8,
+     "paragraph": "90. §",
+     "title": "Hivatalos személy megszemélyesítése",
+     "description": "Rendőrnek vagy más hivatalos személynek való kiadás (egyenruha, jelvény, jármű használata).",
+     "category": "buntett",
+     "fine_min": 5000,
+     "fine_max": 10000,
+     "jail_min": 20,
+     "jail_max": 35,
+     "flags": [],
+     "sort": 5
+    },
+    {
+     "id": 91,
+     "chapter_id": 8,
+     "paragraph": "91. §",
+     "title": "Vesztegetés",
+     "description": "Hivatalos személynek jogtalan előny adása vagy ígérése.",
+     "category": "buntett",
+     "fine_min": 5000,
+     "fine_max": 15000,
+     "jail_min": 15,
+     "jail_max": 30,
+     "flags": [],
+     "sort": 6
+    },
+    {
+     "id": 92,
+     "chapter_id": 8,
+     "paragraph": "92. §",
+     "title": "Hamis tanúzás",
+     "description": "Hatóság vagy bíróság előtt valótlan tanúvallomás tétele.",
+     "category": "buntett",
+     "fine_min": 3000,
+     "fine_max": 7000,
+     "jail_min": 10,
+     "jail_max": 25,
+     "flags": [],
+     "sort": 7
+    },
+    {
+     "id": 93,
+     "chapter_id": 8,
+     "paragraph": "93. §",
+     "title": "Fogolyszökés, fogolyszöktetés",
+     "description": "Őrizetből vagy börtönből való szökés, illetve abban való közreműködés.",
+     "category": "buntett",
+     "fine_min": 5000,
+     "fine_max": 10000,
+     "jail_min": 20,
+     "jail_max": 40,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 8
+    },
+    {
+     "id": 94,
+     "chapter_id": 8,
+     "paragraph": "94. §",
+     "title": "Távoltartás vagy bírósági végzés megszegése",
+     "description": "Bírósági végzésben vagy távoltartásban foglaltak megszegése.",
+     "category": "vetseg",
+     "fine_min": 2000,
+     "fine_max": 4000,
+     "jail_min": 10,
+     "jail_max": 20,
+     "flags": [],
+     "sort": 9
+    },
+    {
+     "id": 95,
+     "chapter_id": 8,
+     "paragraph": "95. §",
+     "title": "Bizonyíték megsemmisítése",
+     "description": "Bizonyítási eszköz eltüntetése, megsemmisítése vagy meghamisítása.",
+     "category": "buntett",
+     "fine_min": 3000,
+     "fine_max": 8000,
+     "jail_min": 15,
+     "jail_max": 25,
+     "flags": [],
+     "sort": 10
+    },
+    {
+     "id": 96,
+     "chapter_id": 8,
+     "paragraph": "96. §",
+     "title": "Bűnpártolás",
+     "description": "Körözött vagy bűncselekményt elkövető személy rejtegetése, segítése a felelősségre vonás alóli kibúvásban.",
+     "category": "vetseg",
+     "fine_min": 2000,
+     "fine_max": 5000,
+     "jail_min": 10,
+     "jail_max": 20,
+     "flags": [],
+     "sort": 11
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "number": "IX.",
+   "title": "Szervezett bűnözés",
+   "description": "Bűnszervezetek, csoportos és rendszeres bűnelkövetés.",
+   "sort": 8,
+   "items": [
+    {
+     "id": 97,
+     "chapter_id": 9,
+     "paragraph": "97. §",
+     "title": "Részvétel bűnszervezetben",
+     "description": "Tagság vagy tevékeny közreműködés bűncselekmények elkövetésére létrejött szervezetben.",
+     "category": "buntett",
+     "fine_min": 10000,
+     "fine_max": 20000,
+     "jail_min": 30,
+     "jail_max": 60,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 0
+    },
+    {
+     "id": 98,
+     "chapter_id": 9,
+     "paragraph": "98. §",
+     "title": "Bűnszervezet vezetése",
+     "description": "Bűnszervezet létrehozása, vezetése vagy irányítása.",
+     "category": "buntett",
+     "fine_min": 25000,
+     "fine_max": 50000,
+     "jail_min": 60,
+     "jail_max": 100,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 1
+    },
+    {
+     "id": 99,
+     "chapter_id": 9,
+     "paragraph": "99. §",
+     "title": "Pénzmosás",
+     "description": "Bűncselekményből származó vagyon eredetének elleplezése.",
+     "category": "buntett",
+     "fine_min": 10000,
+     "fine_max": 25000,
+     "jail_min": 25,
+     "jail_max": 50,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 2
+    },
+    {
+     "id": 100,
+     "chapter_id": 9,
+     "paragraph": "100. §",
+     "title": "Védelmi pénz szedése",
+     "description": "Vállalkozások, személyek rendszeres fizetésre kényszerítése „védelem” fejében.",
+     "category": "buntett",
+     "fine_min": 8000,
+     "fine_max": 15000,
+     "jail_min": 25,
+     "jail_max": 40,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 3
+    },
+    {
+     "id": 101,
+     "chapter_id": 9,
+     "paragraph": "101. §",
+     "title": "Emberkereskedelem",
+     "description": "Személy adása, vétele, toborzása kizsákmányolás céljából.",
+     "category": "buntett",
+     "fine_min": 25000,
+     "fine_max": 50000,
+     "jail_min": 80,
+     "jail_max": 120,
+     "flags": [
+      "korozheto"
+     ],
+     "sort": 4
+    },
+    {
+     "id": 102,
+     "chapter_id": 9,
+     "paragraph": "102. §",
+     "title": "Terrorcselekmény",
+     "description": "Állami szerv kényszerítése vagy a lakosság megfélemlítése céljából elkövetett súlyos erőszak.",
+     "category": "buntett",
+     "fine_min": 50000,
+     "fine_max": 100000,
+     "jail_min": 120,
+     "jail_max": 150,
+     "flags": [
+      "korozheto",
+      "fegyver"
+     ],
+     "sort": 5
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "number": "X.",
+   "title": "Egyéb bűncselekmények",
+   "description": "A fenti fejezetekbe nem sorolható cselekmények.",
+   "sort": 9,
+   "items": [
+    {
+     "id": 103,
+     "chapter_id": 10,
+     "paragraph": "103. §",
+     "title": "Állatkínzás",
+     "description": "Állat indokolatlan bántalmazása vagy kínzása.",
+     "category": "vetseg",
+     "fine_min": 1000,
+     "fine_max": 3000,
+     "jail_min": 5,
+     "jail_max": 15,
+     "flags": [],
+     "sort": 0
+    },
+    {
+     "id": 104,
+     "chapter_id": 10,
+     "paragraph": "104. §",
+     "title": "Tiltott szerencsejáték szervezése",
+     "description": "Engedély nélküli szerencsejáték szervezése vagy üzemeltetése.",
+     "category": "vetseg",
+     "fine_min": 2000,
+     "fine_max": 5000,
+     "jail_min": 5,
+     "jail_max": 15,
+     "flags": [],
+     "sort": 1
+    },
+    {
+     "id": 105,
+     "chapter_id": 10,
+     "paragraph": "105. §",
+     "title": "Engedély nélküli üzleti tevékenység",
+     "description": "Üzleti tevékenység folytatása a szükséges engedélyek nélkül.",
+     "category": "szabalysertes",
+     "fine_min": 1000,
+     "fine_max": 3000,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [],
+     "sort": 2
+    },
+    {
+     "id": 106,
+     "chapter_id": 10,
+     "paragraph": "106. §",
+     "title": "Engedély nélküli vadászat vagy halászat",
+     "description": "Vadászat vagy halászat engedély nélkül, illetve tiltott területen.",
+     "category": "szabalysertes",
+     "fine_min": 500,
+     "fine_max": 2000,
+     "jail_min": 0,
+     "jail_max": 0,
+     "flags": [
+      "fegyver"
+     ],
+     "sort": 3
+    },
+    {
+     "id": 107,
+     "chapter_id": 10,
+     "paragraph": "107. §",
+     "title": "Prostitúció, kerítés",
+     "description": "Szexuális szolgáltatás nyújtása vagy közvetítése ellenérték fejében.",
+     "category": "vetseg",
+     "fine_min": 1000,
+     "fine_max": 3000,
+     "jail_min": 5,
+     "jail_max": 15,
+     "flags": [],
+     "sort": 4
+    },
+    {
+     "id": 108,
+     "chapter_id": 10,
+     "paragraph": "108. §",
+     "title": "Légi jármű vagy drón jogosulatlan használata",
+     "description": "Légi jármű vagy drón használata engedély nélkül vagy korlátozott légtérben.",
+     "category": "vetseg",
+     "fine_min": 2000,
+     "fine_max": 5000,
+     "jail_min": 5,
+     "jail_max": 15,
+     "flags": [
+      "jarmu"
+     ],
+     "sort": 5
+    },
+    {
+     "id": 109,
+     "chapter_id": 10,
+     "paragraph": "109. §",
+     "title": "Segítségnyújtás elmulasztása",
+     "description": "Sérült vagy életveszélyben lévő személy segítségének elmulasztása, ha az elvárható lett volna.",
+     "category": "vetseg",
+     "fine_min": 1000,
+     "fine_max": 2500,
+     "jail_min": 0,
+     "jail_max": 10,
+     "flags": [],
+     "sort": 6
+    }
+   ]
+  }
+ ]
+}

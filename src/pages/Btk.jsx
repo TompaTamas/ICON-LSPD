@@ -6,6 +6,7 @@ import { formatMoneyRange, formatRange } from '../lib/format.js';
 import { calculate, summaryText } from '../lib/btkCalc.js';
 import { ErrorNote, Loading, Markdown, Modal, PageHeader, Pill } from '../components/ui.jsx';
 import { ChapterEditor, ItemEditor } from './btk/Editors.jsx';
+import BTK_FALLBACK from '../data/btk-alap.json';
 
 const CATEGORY_TONE = { szabalysertes: 'gray', vetseg: 'orange', buntett: 'red' };
 
@@ -109,7 +110,11 @@ function Ticket({ result, meta, onClear, setCount }) {
 
 export default function Btk() {
   const { can } = useAuth();
-  const { data, error, loading, reload } = useApi('/api/btk');
+  const live = useApi('/api/btk');
+  const { loading, reload } = live;
+  // Ha a bot szervere nem érhető el, a beépített (kiadáskori) BTK-másolat jelenik meg, szerkesztés nélkül.
+  const offline = !!live.error && !live.data;
+  const data = live.data ?? (offline ? BTK_FALLBACK : null);
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState('');
   const [selection, setSelection] = useState({});
@@ -132,7 +137,6 @@ export default function Btk() {
   })), [data, category, needle]);
 
   if (loading) return <Loading />;
-  if (error) return <ErrorNote error={error} />;
   const meta = { categories: data.categories, flags: data.flags };
   const filtering = !!(needle || category);
 
@@ -161,7 +165,7 @@ export default function Btk() {
         actions={
           <>
             <button type="button" className="btn btn-ghost no-print" onClick={() => window.print()}>Nyomtatás</button>
-            {can('vezeto') && (
+            {can('vezeto') && !offline && (
               <button type="button" className={`btn no-print ${editing ? 'btn-gold' : 'btn-ghost'}`} onClick={() => setEditing((e) => !e)}>
                 {editing ? 'Szerkesztés befejezése' : 'Szerkesztés'}
               </button>
@@ -170,6 +174,11 @@ export default function Btk() {
         }
       />
       <ErrorNote error={actionError} />
+      {offline && (
+        <p className="no-print mb-6 rounded-md border border-warn/40 bg-warn/10 px-4 py-3 text-sm" role="status">
+          A szerver most nem érhető el, ezért a BTK beépített másolatát látod. A vezetőség legutóbbi módosításai akkor jelennek meg, amikor a szerver újra elérhető.
+        </p>
+      )}
 
       <div className="no-print mb-6 flex flex-wrap gap-3">
         <input type="search" className="input max-w-md" placeholder="Keresés: név, paragrafus, leírás…" value={query} onChange={(e) => setQuery(e.target.value)} aria-label="Keresés a BTK-ban" />
